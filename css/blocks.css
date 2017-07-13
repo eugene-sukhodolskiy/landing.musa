@@ -23,6 +23,7 @@
     font-size: 89px;
     margin-top: 200px;
     font-family: ms-r;
+    text-shadow: 0 0 9px black;
 }
 
 #home .description{
@@ -31,6 +32,7 @@
     font-size: 26px;
     font-family: ms-r;
     color: white;
+    text-shadow: 0 0 9px black;
 }
 
 #home .social{
