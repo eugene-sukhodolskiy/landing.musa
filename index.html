@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Musa</title>
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/victor-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="stylesheet" href="css/blocks.css" type="text/css">
+    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/liLanding.js"></script>
+    <script type="text/javascript" src="js/victor-popup.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+   
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #F06292 url(http://hello-site.ru//main/images/preloads/hearts.svg) center center no-repeat;background-size:86px;}</style>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
+    <!-- HelloPreload http://hello-site.ru/preloader/ --> 
+    
+    <header class="header">
+        <button class="mob-nav"><i class="fa fa-bars"></i></button>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 brand-logo">Муза</div>
+            <nav class="col-md-9 main">
+                <!--       Automatic copy from nav.mobile         -->
+            </nav>
+        </div>
+    </header>
+
+    <!--  Main navigation  -->
+    <nav class="mobile">
+        <ul>
+            <li><a href="#home" class="l-page"><i class="fa fa-home"></i>Домой</a></li>
+            <li><a href="#services" class="l-page"><i class="fa fa-briefcase"></i>Услуги</a></li>
+            <li><a href="#about" class="l-page"><i class="fa fa-users"></i>О нас</a></li>
+            <li><a href="#polio" class="l-page"><i class="fa fa-th-large"></i>Наши работы</a></li>
+            <li><a href="#contact" class="l-page"><i class="fa fa-envelope"></i>Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="landingItem page">
+        <a href="#about" class="l-page arrow"><i class="fa fa-long-arrow-down"></i></a>
+        <div class="brand-logo">Муза</div>
+        <div class="description">Некоторое описание</div>
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </section>
+    
+    <section id="services" class="landingItem page">
+        <h1 class="block-title">Наши услуги</h1>
+        <div class="container">
+            <div class="row">
+                <div class="serv-item col-md-4 col-sm-4 col-xs-12">
+                    <div class="icon"><i class="fa fa-plus"></i></div>
+                    <div class="description">Ремонт одежды</div>
+                    <div class="price">от 200 UAH</div>
+                </div>
+
+                <div class="serv-item col-md-4 col-sm-4 col-xs-12">
+                    <div class="icon"><i class="fa fa-wrench"></i></div>
+                    <div class="description">Одежда на заказ</div>
+                    <div class="price">от 400 UAH</div>
+                </div>
+
+                <div class="serv-item col-md-4 col-sm-4 col-xs-12">
+                    <div class="icon"><i class="fa fa-cogs"></i></div>
+                    <div class="description">Реставрация одежды</div>
+                    <div class="price">от 200 UAH</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="about" class="landingItem page">
+        <div class="about-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h1 class="block-title">О нас</h1>
+            <div class="block-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ipsum debitis illum quos totam consectetur hic eius itaque iure quidem ex dolores similique sed sint inventore accusamus modi quae excepturi temporibus, ullam nesciunt. Blanditiis molestiae unde cumque, aliquam explicabo, officiis deleniti minus. Perspiciatis vero itaque cupiditate minima facilis quo ratione, veritatis repellendus cumque? Cumque voluptates velit, itaque atque facere repellendus ad adipisci aspernatur consectetur quidem tempora modi ipsa tenetur molestias inventore consequuntur quis suscipit, dolore dolorem aut quia eius ipsam et! Libero nesciunt facilis voluptate labore, odit assumenda reiciendis molestiae ratione harum dolorum quod, neque quis exercitationem incidunt ea temporibus.
+            </div>
+        </div>
+    </section>
+    
+    <section id="polio" class="landingItem page">
+        <h1 class="block-title">Наши работы</h1>
+        <div class="container">
+            <div class="filters">
+                <a href="#" class="active" data-filter="*">Все</a>
+                <a href="#" data-filter=".pink">Розовый</a>
+                <a href="#" data-filter=".green">Зеленый</a>
+            </div>
+            
+            <div class="grid">
+                <a href="imgs/portfolio/1.jpg" class="popup">
+                    <div class="grid-item green col-sm-6 col-xs-12 col-md-4 col-lg-4">
+                        <div class="grid-caption">Lorem ipsum 
+                            <span class="grid-price">от 600 UAH</span>
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                        <img src="imgs/portfolio/1.jpg" class="grid-img">
+                    </div>
+                </a>
+                <a href="imgs/portfolio/2.jpg" class="popup">
+                    <div class="grid-item pink col-sm-6 col-xs-12 col-md-4 col-lg-4">
+                        <div class="grid-caption">Lorem ipsum 
+                            <span class="grid-price">от 700 UAH</span>
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                        <img src="imgs/portfolio/2.jpg" class="grid-img">
+                    </div>
+                </a>
+                
+                <a href="imgs/portfolio/3.jpg" class="popup">
+                    <div class="grid-item pink col-sm-6 col-xs-12 col-md-4 col-lg-4">
+                        <div class="grid-caption">Lorem ipsum 
+                            <span class="grid-price">от 300 UAH</span>
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                        <img src="imgs/portfolio/3.jpg" class="grid-img">
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="landingItem page">
+       <h1 class="block-title">Связь с нами</h1>
+        <div class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 contact-data">
+                        <p class="location"><i class="fa fa-map-marker"></i> 223 John Adam Street, London.</p>
+                        <p class="phone"><i class="fa fa-phone"></i> 800 123-456-789</p>
+                        <p class="phone"><i class="fa fa-phone"></i> 800 123-456-789</p>
+                        <p class="email"><i class="fa fa-envelope"></i> your@email.com</p>
+                        <p class="email"><i class="fa fa-envelope"></i> your@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="footer-logo">Муза</div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <a href="#home" class="go-up l-page"><i class="fa fa-long-arrow-up"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy;2017</p>
+    </footer>
+    
+    <!--    Require google map script  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&callback=myMap"></script>
+    
+</body>
+</html>

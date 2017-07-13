@@ -1,0 +1,306 @@
+@font-face{
+    font-family: 'ssp-r';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'ssp-l';
+    src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+@font-face{
+    font-family: 'ms-r';
+    src: url('../fonts/MarckScript-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    font-family: 'ssp-l';
+}
+
+p{
+    margin: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section.page{
+    min-height: 500px;
+    transition-duration: .3s;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header.header{
+    position: fixed;
+
+    background-color: #F06292;
+    color: white;
+
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    transition-duration: .3s;
+}
+
+nav.main{
+    text-align: right;
+}
+
+nav.main a{
+    font-size: 15px;
+    color: inherit;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 15px;
+    height: 50px;
+    transition-duration: .3s;
+    font-family: ssp-r;
+    text-transform: uppercase;
+}
+
+nav.main a .fa{
+    margin-right: 10px;
+}
+
+nav.main a:hover,
+nav.main .cur{
+    background-color: rgba(255,255,255,.2);
+}
+
+header .brand-logo{
+    font-size: 39px;
+    position: relative;
+    left: 15px;
+    line-height: 50px;
+    font-family: ms-r;
+}
+
+.page{
+    width: 100%;
+}
+
+.transparent{
+    background-color: transparent !important;
+}
+
+nav.mobile{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 150;
+    display: none;
+}
+
+nav.mobile ul{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    transition-duration: .3s;
+    left: -300px;
+}
+
+nav.mobile li{
+    width: 100%;
+}
+
+nav.mobile li:first-of-type{
+    margin-top: 20px;
+}
+
+nav.mobile li a{
+    color: #666;
+    transition-duration: .3s;
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    font-family: ssp-r;
+    text-transform: uppercase;
+}
+
+nav.mobile li a:hover{
+    background-color: #ddd;
+}
+
+nav.mobile li a .fa{
+    padding-right: 25px;
+    padding-left: 25px;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+nav.mobile.active ul{
+    left: 0px;
+}
+
+.mob-nav{
+    color: white;
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    padding: 20px;
+    top: -6px;
+    cursor: pointer;
+    z-index: 110;
+}
+
+@media (max-width: 994px){
+    header.header nav.main{
+        display: none;
+    }
+
+    .mob-nav{
+        display: block;
+    }
+
+    header.header .brand-logo{
+        text-align: center;
+    }
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+}
+
+.social li{
+    display: inline-block;
+}
+
+.social li a{
+    display: block;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    transition-duration: .3s;
+    border-radius: 100%;
+}
+
+.social li a:first-of-type{
+    margin-left: 0;
+}
+
+.social li a:hover{
+    background-color: white;
+    color: grey;
+}
+
+.block-title{
+    width: 100%;
+    line-height: 100px;
+    font-size: 29px;
+    font-family: ms-r;
+    font-weight: normal;
+    text-align: center;
+}
+
+.block-content{
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 30px;
+}
+
+.container{
+    width: 1000px;
+    max-width: 100%;
+}
+
+footer.footer{
+    background-color: #00E676;
+    color: white;
+    min-height: 100px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.copyright{
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.footer-logo{
+    font-size: 59px;
+    line-height: 60px;
+    font-family: ms-r;
+    position: relative;
+    top: 16px;
+}
+
+footer.footer .social{
+    margin-top: 35px;
+}
+
+.go-up{
+    font-size: 22px;
+    color: white;
+    background-color: #F06292;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: -25px;
+    transition-duration: .3s;
+}
+
+.go-up:hover{
+    box-shadow: 0 0 4px black;
+    width: 52px;
+    height: 52px;
+}
+
+@media (max-width: 768px){
+    .go-up{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
