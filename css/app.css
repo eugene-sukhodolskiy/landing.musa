@@ -72,8 +72,6 @@ nav.main a{
     height: 50px;
     transition-duration: .3s;
     font-family: ssp-r;
-/*    font-family: ms-r;*/
-/*    text-transform: uppercase;*/
 }
 
 nav.main a .fa{
@@ -135,6 +133,7 @@ nav.mobile li a{
     padding: 20px 0;
     width: 100%;
     font-family: ssp-r;
+    margin-left: 20px;
 /*    text-transform: uppercase;*/
 }
 
