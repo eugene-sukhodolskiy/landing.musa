@@ -89,6 +89,8 @@ header .brand-logo{
     left: 15px;
     line-height: 50px;
     font-family: ms-r;
+    opacity: 1;
+    transition-duration: .3s;
 }
 
 .page{
@@ -97,6 +99,10 @@ header .brand-logo{
 
 .transparent{
     background-color: transparent !important;
+}
+
+.header.transparent .brand-logo{
+    opacity: 0 !important;
 }
 
 nav.mobile{

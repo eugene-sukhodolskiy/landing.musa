@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#home').css('height', window.innerHeight);
-    $('#home .brand-logo').css('margin-top', Math.floor(window.innerHeight / 2 - 200));
+    $('#home .brand-logo').css('margin-top', Math.floor(window.innerHeight / 2 - 250));
     initMainNav();
     
     $('nav.mobile').click(function(){
