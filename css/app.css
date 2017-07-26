@@ -50,7 +50,7 @@ section.page{
 header.header{
     position: fixed;
 
-    background-color: #F06292;
+    background-color: #4E342E;
     color: white;
 
     width: 100%;
@@ -72,7 +72,8 @@ nav.main a{
     height: 50px;
     transition-duration: .3s;
     font-family: ssp-r;
-    text-transform: uppercase;
+/*    font-family: ms-r;*/
+/*    text-transform: uppercase;*/
 }
 
 nav.main a .fa{
@@ -134,7 +135,7 @@ nav.mobile li a{
     padding: 20px 0;
     width: 100%;
     font-family: ssp-r;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 }
 
 nav.mobile li a:hover{
@@ -215,7 +216,8 @@ nav.mobile.active ul{
     width: 100%;
     line-height: 100px;
     font-size: 29px;
-    font-family: ms-r;
+    color: #6D4C41;
+    font-family: ssp-r;
     font-weight: normal;
     text-align: center;
 }
@@ -234,7 +236,7 @@ nav.mobile.active ul{
 }
 
 footer.footer{
-    background-color: #00E676;
+    background-color: #6D4C41;
     color: white;
     min-height: 100px;
     text-align: center;
@@ -256,6 +258,12 @@ footer.footer{
     top: 16px;
 }
 
+.footer-logo .logo-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
 footer.footer .social{
     margin-top: 35px;
 }
@@ -263,7 +271,7 @@ footer.footer .social{
 .go-up{
     font-size: 22px;
     color: white;
-    background-color: #F06292;
+    background-color: #3E2723;
     display: inline-block;
     width: 50px;
     height: 50px;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#home').css('height', window.innerHeight);
-    $('#home .brand-logo').css('margin-top', Math.floor(window.innerHeight / 2 - 150));
+    $('#home .brand-logo').css('margin-top', Math.floor(window.innerHeight / 2 - 200));
     initMainNav();
     
     $('nav.mobile').click(function(){
@@ -18,6 +18,28 @@ $(document).ready(function(){
         $('nav.mobile').addClass('active');
 
     });
+    
+    // about carousel init
+    var imgItem = $('.about-img-item');
+    for(var i=0;i<imgItem.length;i++){
+        var attr = $(imgItem[i]).attr('data-src');
+        $(imgItem[i]).css('background-image', 'url('+attr+')');
+    }
+    // end about carousel init
+    
+    
+    //about slide-show init
+    $('.slick-fade').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+    //end
     
     $('body').liLanding({
         topMargin:50,
